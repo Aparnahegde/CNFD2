@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hibe_example.Student" table="Student">
+        <id name="id" column="id" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="address" column="address" type="string"/>
+        <property name="usn" column="usn" type="string"/>
+        <property name="name" column="name" type="string"/>
+        <property name="totmarks" column="totmarks" type="int"/>
+    </class>
+</hibernate-mapping>
